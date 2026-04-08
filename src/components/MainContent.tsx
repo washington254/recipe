@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const recipes = [
   {
@@ -114,7 +114,7 @@ const MainContent = () => {
       {/* Recipe Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2  mt-20 md:mb-10 w-full place-items-center">
         {recipes.map((recipe, index) => (
-          <div key={index} className="relative w-full  bg-white rounded-[2rem] shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col pt-18 pb-2 px-1 border border-gray-100/50 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300">
+          <div key={index} className="relative w-full  bg-white rounded-4xl shadow-[0_4px_25px_rgba(0,0,0,0.03)] flex flex-col pt-18 pb-2 px-1 border border-gray-100/50 hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300">
             
             {/* Overlapping Image */}
             <div className="absolute -top-[80px] left-1/2 -translate-x-1/2 size-40 transition-transform duration-300 ">

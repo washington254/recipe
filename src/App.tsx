@@ -6,18 +6,17 @@ import Reviews from "./components/Reviews"
 function App() {
 
   return (
-    <div className="flex w-full h-screen bg-[#f7efe6]  font-sans">
+    <div className="flex w-full h-screen bg-[#f7efe6] md:overflow-hidden  font-sans">
       <SideNav />
       
       <main className="flex-1 h-full flex flex-col w-full px-4 md:px-10 pt-4 md:pt-[2%] ">
         
-        {/* Top ~70% Height Content */}
-        <div className="w-full min-h-[auto] 2xl:min-h-[66%] shrink-0 pb-10 xl:pb-4 flex flex-col justify-center">
+        <div className="w-full h-screen shrink-0 pb-10 xl:pb-4 flex flex-col justify-center">
           <MainContent />
         </div>
         
         {/* Bottom ~30% Height Content */}
-        <div className="w-full min-h-[auto] 2xl:min-h-[30%] shrink-0 flex flex-col xl:flex-row gap-6 pb-8">
+        {/* <div className="w-full  2xl:min-h-[30%] shrink-0 flex flex-col xl:flex-row gap-6 pb-8">
           <div className="w-full xl:w-[65%] shrink-0 flex">
             <BottomCTA />
           </div>
@@ -25,7 +24,7 @@ function App() {
           <div className="w-full xl:w-[35%] shrink-0 flex flex-col pb-4 h-full">
             <Reviews />
           </div>
-        </div>
+        </div> */}
         
       </main>
     </div>

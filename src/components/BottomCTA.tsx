@@ -2,10 +2,10 @@ import React from 'react';
 
 const BottomCTA = () => {
   return (
-    <div className="relative w-full max-w-[850px] mx-auto bg-white rounded-[2.5rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col md:flex-row items-center overflow-hidden py-10 md:py-0">
+    <div className="relative w-full max-w-[650px] mx-auto bg-white rounded-2xl  flex flex-col md:flex-row items-center py-4 md:py-0">
       
       {/* Left side (Image) */}
-      <div className="relative w-[80%] md:w-[45%] h-[280px] md:h-[340px] shrink-0 flex items-center justify-center -mb-8 md:mb-0">
+      <div className="relative w-[80%] md:w-[45%] size-40 shrink-0 flex items-center justify-center mb-4 md:mb-0">
         {/* Subtle green glow behind the image */}
         <div className="absolute inset-0 bg-emerald-400/20 blur-[60px] rounded-full scale-[0.7] md:translate-x-10"></div>
         {/* We use negative margins/translation to create that overflow look on the left edge as in design */}
@@ -17,15 +17,15 @@ const BottomCTA = () => {
       </div>
 
       {/* Right side (Content) */}
-      <div className="w-full md:w-[55%] p-8 md:p-14 md:pl-4 flex flex-col justify-center z-20">
-        <h2 className="text-3xl font-bold font-serif text-[#1e2329] leading-tight mb-5">
+      <div className="w-full md:w-[55%] p-8  flex flex-col justify-center z-20">
+        <h2 className="text-2xl font-bold font-serif text-[#1e2329] leading-tight mb-3">
           Instant Pot Greek<br />Chicken Bowls
         </h2>
-        <p className="text-gray-500 font-sans text-[15px] leading-relaxed mb-7 max-w-md antialiased">
-          The flavors of the Mediterranean are cooked up in 30 minutes in an Instant Pot® for a quick and filling, souvlaki-inspired weeknight dinner.
+        <p className="text-gray-500 font-sans text-sm leading-relaxed mb-4 max-w-md antialiased">
+          The flavors of the Mediterranean are cooked up in 30 minutes in an Instant Pot® for a quick
         </p>
         
-        <div className="flex flex-wrap items-center gap-6 md:gap-8 text-[14.5px] text-gray-500 font-semibold mb-8">
+        <div className="flex flex-wrap items-center gap-3 text-sm text-gray-500 font-semibold mb-3">
           <div className="flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
@@ -45,7 +45,7 @@ const BottomCTA = () => {
           </div>
         </div>
 
-        <a href="#" className="inline-flex items-center gap-[6px] text-[#00b37e] font-bold text-[15px] transition-colors group w-max hover:text-[#009267]">
+        <a href="#" className="inline-flex items-center gap-2 text-[#00b37e] font-bold text-sm transition-colors group w-max hover:text-[#009267]">
           Get The Offer
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transform transition-transform group-hover:translate-x-[2px] group-hover:-translate-y-[2px]">
             <path d="M7 17L17 7" />

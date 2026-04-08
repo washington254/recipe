@@ -9,7 +9,7 @@ const SideNav = () => {
       <button 
         onClick={() => setIsOpen(!isOpen)}
         title="Toggle Menu"
-        className="md:hidden fixed z-50 top-4 left-4 bg-white p-2 rounded-lg shadow-md border border-gray-100 text-gray-700 hover:bg-gray-50 transition-colors"
+        className="md:hidden fixed z-50 top-4 right-4 bg-white p-2 rounded-lg shadow-md border border-gray-100 text-gray-700 hover:bg-gray-50 transition-colors"
       >
         {isOpen ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -27,7 +27,7 @@ const SideNav = () => {
       )}
 
       {/* Side Navigation Menu */}
-      <nav className={`fixed top-0 left-0 h-screen bg-white md:border-r md:border-gray-50 shadow-[0_4px_30px_rgba(0,0,0,0.05)] md:shadow-none flex flex-col items-center py-4 transition-transform duration-300 ease-in-out z-50 overflow-hidden ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+      <nav className={`h-screen bg-white md:border-r md:border-gray-50 shadow-[0_4px_30px_rgba(0,0,0,0.05)] md:shadow-none flex flex-col items-center py-4 transition-transform duration-300 ease-in-out z-50 overflow-hidden ${isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
         
         {/* Logo Section */}
         <div className="w-full flex justify-center mb-3">

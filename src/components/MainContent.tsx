@@ -45,7 +45,7 @@ const categories = [
 
 const MainContent = () => {
   return (
-    <div className="w-full flex flex-col gap-10">
+    <div className="w-full  flex flex-col gap-10">
       
       {/* Top Header */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-6 w-full">
